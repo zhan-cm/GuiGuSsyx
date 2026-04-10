@@ -1,0 +1,23 @@
+server:
+  port: 8203
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/shequ-product?characterEncoding=utf-8&useSSL=false
+    username: root
+    password: 123456
+
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+minio:
+  endpoint: http://8.138.246.216:9000  # ⚠️ 注意这里是9000（API端口），绝对不能填9001
+  accessKey: minioadmin                # 你登录后台的账号
+  secretKey: minioadmin                # 你登录后台的密码
+  bucketName: ssyx-bucket              # 刚才创建的桶名称

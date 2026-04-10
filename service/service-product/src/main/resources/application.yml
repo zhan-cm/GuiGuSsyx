@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: service-product  # ⚠️ 提醒：请根据您当前实际配置的微服务模块名称进行填写！如果是给用户服务配置，这里就写 service-user。
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848 # ⚠️ 提醒：请务必替换为您实际部署 Nacos 的阿里云服务器 IP 地址！
